@@ -3,6 +3,7 @@ import { FiGithub } from "react-icons/fi";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { FaInstagram } from "react-icons/fa";
 import ProjectCard from "./components/projectCard";
+import Skills from "./components/skills";
 
 export default function App() {
   return (
@@ -46,23 +47,23 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section id="about" className="h-[100vh] flex items-center">
-        <div className="text-white p-28">
+      <section id="about" className="h-[100vh] flex items-center px-8 py-24">
+        <div className="text-white max-w-6xl mx-auto">
           <div>
-            <h1 className="text-4xl font-poppins">
+            <h1 className="text-5xl font-bold mb-16">
               About Me
             </h1>
-            <p className="mt-5 font-mono">
+            <p className="mt-5 text-lg text-neutral-400 mb-16">
               I'm Himanshu, a developer with a strong interest in Machine Learning and Artificial Intelligence, focused on building practical applications that solve real-world problems. <br />
 
               I enjoy taking projects from idea to deployment—training machine learning models, developing backend APIs, and creating intuitive web interfaces that make those models accessible to users. Through projects in natural language processing, computer vision, and full-stack development, I've gained hands-on experience with model evaluation, feature engineering, deployment, and building end-to-end ML applications.
             </p>
           </div>
           <div>
-            <h1 className="text-4xl font-poppins mt-10">
+            <h1 className="text-5xl  mt-10 text-white font-bold">
               Education
             </h1>
-            <table className="mt-5 font-mono">
+            <table className="mt-5 text-neutral-400">
               <tbody>
                 <tr>
                   <td>
@@ -85,79 +86,13 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section id="skills" className="h-[100vh]">
-        <div className="text-white p-28">
-            <h1 className="text-4xl">
-              Skills
-            </h1>
-            <div className="mt-5">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      Languages
-                    </td>
-                    <td>
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>Python</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>Javascript / NodeJS</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>HTML</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>CSS</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="mt-5">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      Machine Learning
-                    </td>
-                    <td>
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>scikit-learn</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>Pandas</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>Numpy</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>Matplotlib</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-        </div>
-      </section>
-      <section id="projects" className="h-[100vh]">
-        <div className="text-white p-36">
-          <h1 className="text-3xl font-poppins">
+      < Skills />
+      <section id="projects" className="h-[100vh] px-8 py-24">
+        <div className="text-white max-w-6xl mx-auto">
+          <h1 className="font-bold text-5xl">
             Projects
           </h1>
-          <p className="font-mono mt-5">
+          <p className="text-lg text-neutral-400 mt-5">
             Projects that showcase my skills
           </p>
           <div className="p-10 grid grid-cols-2 gap-6 max-sm:grid-cols-1">

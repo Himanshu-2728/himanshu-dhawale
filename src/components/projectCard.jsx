@@ -2,7 +2,7 @@ import { FaLink } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 export default function ProjectCard() {
-    return <div className="bg-[#2C2C2A] w-[35vw] rounded-md border-[0.5px] border-gray-600 p-3 hover:scale-[101%] transition ease-linear hover:border-blue-400">
+    return <div className="bg-[#2C2C2A] w-[35vw] rounded-md border border-neutral-700 p-3  transition ease-linear hover:border-neutral-500">
         <a href="https://sentiment-frontend-two.vercel.app/">
         <img src="smt.png" alt="fs" />
         </a>
@@ -15,6 +15,7 @@ export default function ProjectCard() {
         <ul className="text-sm list-disc p-5">
             <li>Trained on 160k+ comments</li>
             <li>Logistic Regression classifier</li>
+            <li>Gained 82% accuracy</li>
             <li>CountVectorizer with n-grams {"(1,2)"}</li>
             <li>Flask REST API</li>
             <li>React frontend</li>
