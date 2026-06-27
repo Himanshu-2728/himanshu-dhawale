@@ -2,22 +2,23 @@ import { FaRegFileAlt } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { FaInstagram } from "react-icons/fa";
+import ProjectCard from "./components/projectCard";
 
 export default function App() {
   return (
     <>
-      <div className="bg-[#2C2C2A] flex justify-around h-16 items-center border-b-[0.5px] border-gray-600 sticky top-0 py-10">
-        <p className="text-white font-bold mx-10">
-          {"{ himanshu.dev }"}
+      <div className="bg-[#2C2C2A] flex justify-around h-[3vh] items-center border-b-[0.5px] border-gray-600 sticky top-0 py-10">
+        <p className="text-white font-bold mx-10 z-0">
+          {" himanshu.dev "}
         </p>
         <div className="text-[#A4A49A] mx-10 font-poppins flex justify-around w-[25%]">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
+          <a href="#projects">Projects</a>
         </div>
       </div>
-      <section id="home" className="h-[100vh] text-white flex items-center justify-center">
+      <section id="home" className="h-[95vh] text-white flex items-center justify-center">
         <div>
           <h1 className="text-center text-7xl font-poppins">
             Himanshu Dhawale. 
@@ -45,7 +46,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section id="about" className="h-[100vh]">
+      <section id="about" className="h-[100vh] flex items-center">
         <div className="text-white p-28">
           <div>
             <h1 className="text-4xl font-poppins">
@@ -81,6 +82,89 @@ export default function App() {
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </section>
+      <section id="skills" className="h-[100vh]">
+        <div className="text-white p-28">
+            <h1 className="text-4xl">
+              Skills
+            </h1>
+            <div className="mt-5">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      Languages
+                    </td>
+                    <td>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Python</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Javascript / NodeJS</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>HTML</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>CSS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-5">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      Machine Learning
+                    </td>
+                    <td>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>scikit-learn</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Pandas</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Numpy</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Matplotlib</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </section>
+      <section id="projects" className="h-[100vh]">
+        <div className="text-white p-36">
+          <h1 className="text-3xl font-poppins">
+            Projects
+          </h1>
+          <p className="font-mono mt-5">
+            Projects that showcase my skills
+          </p>
+          <div className="p-10 grid grid-cols-2 gap-6 max-sm:grid-cols-1">
+            < ProjectCard />
+            < ProjectCard />
+            < ProjectCard />
+            < ProjectCard />
           </div>
         </div>
       </section>
