@@ -1,18 +1,18 @@
 import { FaLink } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-export default function ProjectCard() {
+export default function SentimentAnalysisCard() {
     return <div className="bg-[#2C2C2A] w-[35vw] rounded-md border border-neutral-700 p-3  transition ease-linear hover:border-neutral-500">
         <a href="https://sentiment-frontend-two.vercel.app/">
         <img src="smt.png" alt="fs" />
         </a>
-        <h1 className="text-2xl font-bold text-gray-100 mt-5">
+        <h1 className="text-3xl font-bold text-gray-100 mt-5">
             Sentiment Analysis
         </h1>
-        <p className="mt-5 text-[13px] text-gray-100 font-thin">
+        <p className="mt-5 text-lg font-thin text-neutral-400">
            A full-stack sentiment analysis application that predicts the sentiment of user-provided text in real time.
         </p>
-        <ul className="text-sm list-disc p-5">
+        <ul className="text-lg list-disc p-5 text-neutral-400">
             <li>Trained on 160k+ comments</li>
             <li>Logistic Regression classifier</li>
             <li>Gained 82% accuracy</li>
@@ -31,13 +31,13 @@ export default function ProjectCard() {
         <div className="mt-5 flex justify-items-start font-poppins text-sm">
             <p className="text-sm mx-3 flex items-center">
                 < FaLink  className="mx-2"/>
-                <a href="https://sentiment-frontend-two.vercel.app/" className="hover:text-blue-300 underline underline-offset-8">
+                <a href="https://sentiment-frontend-two.vercel.app/" target="_blank" className="hover:text-blue-300 underline underline-offset-8">
                     Live Preview
                 </a>
             </p>
             <p className="flex items-center">
                 < FaGithub className="mx-2"/>
-                <a href="https://github.com/Himanshu-2728/sentiment-analysis-model/tree/main" className="hover:text-blue-300 underline underline-offset-8">
+                <a href="https://github.com/Himanshu-2728/sentiment-analysis-model/tree/main" target="_blank" className="hover:text-blue-300 underline underline-offset-8">
                 Github 
             </a>
             </p>

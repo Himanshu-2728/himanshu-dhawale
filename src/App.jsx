@@ -2,7 +2,7 @@ import { FaRegFileAlt } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { FaInstagram } from "react-icons/fa";
-import ProjectCard from "./components/projectCard";
+import SentimentAnalysisCard from "./components/sentiment-analysis";
 import Skills from "./components/skills";
 
 export default function App() {
@@ -32,10 +32,10 @@ export default function App() {
               <FaRegFileAlt className="mr-1" />
                 Resume
             </button> 
-            <button className="hover:border-blue-600 flex items-center bg-[#2C2C2A]  rounded-lg p-2 border-[0.5px] border-gray-600 mx-1"> 
+            <a href="https://github.com/Himanshu-2728" target="_blank" className="hover:border-blue-600 flex items-center bg-[#2C2C2A]  rounded-lg p-2 border-[0.5px] border-gray-600 mx-1"> 
               <FiGithub className="mr-1" />
               Github
-            </button>
+            </a>
             <button className="hover:border-blue-600 flex items-center bg-[#2C2C2A]  rounded-lg p-2 border-[0.5px] border-gray-600 mx-1">
               <TbBrandLinkedin className="mr-1" />
               LinkedIn
@@ -95,11 +95,8 @@ export default function App() {
           <p className="text-lg text-neutral-400 mt-5">
             Projects that showcase my skills
           </p>
-          <div className="p-10 grid grid-cols-2 gap-6 max-sm:grid-cols-1">
-            < ProjectCard />
-            < ProjectCard />
-            < ProjectCard />
-            < ProjectCard />
+          <div className="p-10 grid grid-cols-2 gap-10 max-sm:grid-cols-1">
+            < SentimentAnalysisCard />
           </div>
         </div>
       </section>

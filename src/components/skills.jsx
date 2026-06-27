@@ -37,7 +37,6 @@ const skillCategories = [
       "GitHub",
       "VS Code",
       "Jupyter Notebook",
-      "Postman",
     ],
   },
   {
