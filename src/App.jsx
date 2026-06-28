@@ -13,7 +13,11 @@ export default function App() {
       {/* Navbar */}
       <nav className="sticky top-0 z-50 border-b border-neutral-700 bg-[#2C2C2A]/90 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
-          <p className="text-lg font-bold  text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-500 ">{"himanshu dhawale"}</p>
+          <p className="text-lg font-bold  text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-500 hover:scale-[103%] transition ease-linear">
+            <a href="https://himanshudotdev.vercel.app/">
+              {"himanshu.dev"}
+            </a>
+          </p>
 
           {/* Desktop Nav */}
           <div className="hidden items-center gap-8 font-poppins text-neutral-300 md:flex">
