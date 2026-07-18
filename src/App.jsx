@@ -4,14 +4,61 @@ import { FiGithub } from "react-icons/fi";
 import { TbBrandLinkedin } from "react-icons/tb";
 import SentimentAnalysisCard from "./components/sentiment-analysis";
 import Skills from "./components/skills";
+import Ferrofluid from './components/Ferrofluid';
+import Plasma from "./components/Plasma";
+import Particles from "./components/Particles";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
+      {
+        
+      }
+      {/* <Ferrofluid
+        colors={["#ffffff","#ffffff","#ffffff"]}
+        speed={0.5}
+        scale={1.6}
+        turbulence={1}
+        fluidity={0.1}
+        rimWidth={0.2}
+        sharpness={2.5}
+        shimmer={1.5}
+        glow={2}
+        flowDirection="down"
+        opacity={1}
+        mouseInteraction
+        mouseStrength={1}
+        mouseRadius={0.35}
+      /> */}
+      <div className="hidden sm:block">
+      <Plasma
+        color="#B497CF"
+        speed={1}
+        direction="forward"
+        scale={1}
+        opacity={1}
+        mouseInteractive={false}
+        />
+      </div>
+      <div className="block sm:hidden">
+      <Particles
+        particleColors={["#ffffff"]}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover
+        alphaParticles={false}
+        disableRotation={false}
+        pixelRatio={1}
+        />
+      </div>
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 border-b border-neutral-700 bg-[#2C2C2A]/90 backdrop-blur-sm">
+      {/* <div className="relative z-[1]"> */}
+
+      <nav className="sticky top-5 md:top-10 max-w-[95vw] md:max-w-[80vw] m-auto rounded-3xl z-50 border  border-neutral-700 bg-[#2C2C2A]/10 sm:bg-[#2C2C2A]/30 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
           <p className="text-lg font-bold  text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-500 hover:scale-[103%] transition ease-linear">
             <a href="https://himanshudotdev.vercel.app/">
@@ -20,7 +67,7 @@ export default function App() {
           </p>
 
           {/* Desktop Nav */}
-          <div className="hidden items-center gap-8 font-poppins text-neutral-300 md:flex">
+          <div className="hidden items-center gap-8 font-poppins text-neutral-300/55 md:flex">
             <a href="#home" className="hover:text-white transition-colors">
               Home
             </a>
@@ -46,13 +93,13 @@ export default function App() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="flex flex-col border-t border-neutral-700 bg-[#2C2C2A] md:hidden">
+          <div className="flex flex-col border-t border-neutral-700 bg-[#2C2C2A]/20 md:hidden rounded-b-3xl">
             {["home", "about", "skills", "projects"].map((item) => (
               <a
                 key={item}
                 href={`#${item}`}
                 onClick={() => setMenuOpen(false)}
-                className="px-5 py-4 text-neutral-300 capitalize hover:bg-neutral-800"
+                className="px-5 py-4 text-neutral-300 capitalize hover:bg-neutral-800 "
               >
                 {item}
               </a>
@@ -66,6 +113,7 @@ export default function App() {
         id="home"
         className="flex min-h-[92vh] items-center justify-center px-5 text-white sm:px-8 lg:px-12"
       >
+
         <div className="max-w-4xl text-center">
           <h1 className="font-poppins text-5xl font-bold leading-tight sm:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-neutral-600 to-neutral-200 ">
             Himanshu Dhawale.
@@ -104,10 +152,12 @@ export default function App() {
           </div>
         </div>
       </section>
+      {/* </div> */}
+
 
       <section
         id="about"
-        className="min-h-screen px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-24"
+        className="min-h-screen px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-24 bg-[#0f0f0f]/90"
       >
         <div className="mx-auto max-w-6xl">
           <h1 className="mb-10 text-4xl font-bold sm:text-5xl">
@@ -160,7 +210,7 @@ export default function App() {
       {/* Projects */}
       <section
         id="projects"
-        className="min-h-screen px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-24 "
+        className="min-h-screen px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-24 bg-[#0f0f0f] "
       >
         <div className="mx-auto max-w-6xl">
           <h1 className="text-4xl font-bold sm:text-5xl">
