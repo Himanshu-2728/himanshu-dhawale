@@ -40,7 +40,7 @@ export default function Skills() {
       id="skills"
       className="min-h-screen bg-[#0f0f0f] px-5 py-16 text-white sm:px-8 sm:py-20 lg:px-12 lg:py-24 "
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl mt-10">
         <h1 className="mb-4 text-4xl font-bold sm:text-5xl lg:text-6xl">
           Skills
         </h1>

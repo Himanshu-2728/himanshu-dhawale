@@ -2,11 +2,12 @@ import { useState } from "react";
 import { FaRegFileAlt, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { TbBrandLinkedin } from "react-icons/tb";
-import SentimentAnalysisCard from "./components/sentiment-analysis";
 import Skills from "./components/skills";
-import Ferrofluid from './components/Ferrofluid';
 import Plasma from "./components/Plasma";
 import Particles from "./components/Particles";
+import ShinyText from "./components/ShinyText";
+import RotatingText from "./components/RotatingText";
+import SkillCard from "./components/SkillCard";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,7 +59,7 @@ export default function App() {
       {/* Navbar */}
       {/* <div className="relative z-[1]"> */}
 
-      <nav className="sticky top-5 md:top-10 max-w-[95vw] md:max-w-[80vw] m-auto rounded-3xl z-50 border  border-neutral-700 bg-[#2C2C2A]/10 sm:bg-[#2C2C2A]/30 backdrop-blur-sm">
+      <nav className="sticky top-5 md:top-10 max-w-[95vw] md:max-w-[70vw] m-auto rounded-3xl z-50 border  border-neutral-700 bg-[#2C2C2A]/10 sm:bg-[#2C2C2A]/30 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
           <p className="text-lg font-bold  text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-500 hover:scale-[103%] transition ease-linear">
             <a href="https://himanshudotdev.vercel.app/">
@@ -116,12 +117,37 @@ export default function App() {
 
         <div className="max-w-4xl text-center">
           <h1 className="font-poppins text-5xl font-bold leading-tight sm:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-neutral-600 to-neutral-200 ">
-            Himanshu Dhawale.
+            <ShinyText
+              text="Himanshu Dhawale"
+              speed={2}
+              delay={0}
+              color="#b5b5b5"
+              shineColor="#ffffff"
+              spread={120}
+              direction="left"
+              yoyo={true}
+              pauseOnHover
+              disabled={false}
+            />
           </h1>
 
-          <p className="mx-auto mt-6 max-w-3xl font-mono text-base leading-8 text-neutral-300 sm:text-lg lg:text-2xl">
-            AIML Student passionate about NLP, Computer Vision and building
-            deployable ML applications.
+          <p className="mx-auto mt-6 max-w-3xl font-mono text-base leading-8 sm:leading-none text-neutral-300 sm:text-lg lg:text-2xl">
+            Hi, I'am a second year college student passionate about <br />
+            <RotatingText
+              texts={["Machine Learning" , "NLP" , "Computer Vision"]}
+              mainClassName="px-1 sm:mt-3 sm:px-2 md:px-3 bg-[#2C2C2A]/10 backdrop-blur-lg text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+              staggerFrom="last"
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "-120%" }}
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+              transition={{ type: "spring", damping: 30, stiffness: 400 }}
+              rotationInterval={2000}
+              splitBy="characters"
+              auto
+              loop
+            />
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -134,18 +160,18 @@ export default function App() {
               href="https://github.com/Himanshu-2728"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center rounded-lg border border-neutral-600 bg-[#2C2C2A] px-4 py-2 hover:border-blue-600 transition"
+              className="flex items-center rounded-lg border border-neutral-600 bg-[#2C2C2A]/30 backdrop-blur-sm px-4 py-2 hover:border-neutral-400 transition"
             >
               <FiGithub className="mr-2" />
               GitHub
             </a>
 
-            <a href="https://www.linkedin.com/in/himanshu-dhawale-17b784344/?skipRedirect=true" target="_blank" className="flex items-center rounded-lg border border-neutral-600 bg-[#2C2C2A] px-4 py-2 hover:border-blue-600 transition">
+            <a href="https://www.linkedin.com/in/himanshu-dhawale-17b784344/?skipRedirect=true" target="_blank" className="flex items-center rounded-lg border border-neutral-600 bg-[#2C2C2A]/30 backdrop-blur-sm  px-4 py-2 hover:border-neutral-400 transition">
               <TbBrandLinkedin className="mr-2" />
               LinkedIn
             </a>
 
-            <a href="https://www.instagram.com/himanshuu_dhawale/" target="_blank" className="flex items-center rounded-lg border border-neutral-600 bg-[#2C2C2A] px-4 py-2 hover:border-blue-600 transition">
+            <a href="https://www.instagram.com/himanshuu_dhawale/" target="_blank" className="flex items-center rounded-lg border border-neutral-600 bg-[#2C2C2A]/30 backdrop-blur-sm  px-4 py-2 hover:border-neutral-400 transition">
               <FaInstagram className="mr-2" />
               Instagram
             </a >
@@ -157,9 +183,9 @@ export default function App() {
 
       <section
         id="about"
-        className="min-h-screen px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-24 bg-[#0f0f0f]/90"
+        className="min-h-screen px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-24 bg-[#0f0f0f]"
       >
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl mt-10">
           <h1 className="mb-10 text-4xl font-bold sm:text-5xl">
             About Me
           </h1>
@@ -202,17 +228,40 @@ export default function App() {
               </div>
             </div>
           </div>
+          <div className="mt-16">
+            <h2 className="mb-6 text-4xl font-bold">Experience</h2>
+
+            <div className="rounded-xl border border-neutral-700 bg-neutral-900 p-6">
+              <h3 className="text-xl font-semibold">
+                ACMSC - Technical Team Member
+              </h3>
+
+              <p className="mt-2 text-neutral-400">
+                 Association for Computing Machinery Student Chapter YCCE
+              </p>
+
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                <span className="rounded bg-blue-600 px-3 py-1 text-sm">
+                  Current
+                </span>
+
+                <span className="text-blue-400">
+                  12 July 2025 – Present
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <Skills />
+      <Skills/>
 
       {/* Projects */}
       <section
         id="projects"
         className="min-h-screen px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-24 bg-[#0f0f0f] "
       >
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl mt-10">
           <h1 className="text-4xl font-bold sm:text-5xl">
             Projects
           </h1>
@@ -221,8 +270,9 @@ export default function App() {
             Projects that showcase my skills.
           </p>
 
-          <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2 rounded-md">
-            <SentimentAnalysisCard />
+          <div className="mt-12 rounded-md">
+            {/* <SentimentAnalysisCard /> */}
+            < SkillCard />
           </div>
         </div>
       </section>
