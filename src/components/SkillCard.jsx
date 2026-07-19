@@ -11,7 +11,7 @@ const data = {
     techStack: [
         ["Python", "Scikit-learn", "Pandas", "NumPy", 'Flask', "React", "Tailwind CSS", "JavaScript", "Joblib", "CountVectorizer", "Logistic Regression"
 ], 
-        ["React.js", "Vite", "Tailwind CSS", "Python", "FastAPI", "Google Gemini API", "Groq", "OpenAI API", "BeautifulSoup4", "PyPDF", "REST API"]
+        ["React.js", "Vite", "Tailwind CSS", "Python", "FastAPI", "Google Gemini API", "Groq", "BeautifulSoup4", "PyPDF", "Antigravity"]
     ],
     liveLink: ["https://sentiment-frontend-two.vercel.app/", "l2"   ],
     githubLink: ["https://github.com/Himanshu-2728/sentiment-analysis-model/tree/main", "https://github.com/Himanshu-2728/PolicyPilot"],

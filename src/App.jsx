@@ -246,7 +246,7 @@ export default function App() {
                 </span>
 
                 <span className="text-blue-400">
-                  12 July 2025 – Present
+                  12 July 2026 – Present
                 </span>
               </div>
             </div>
