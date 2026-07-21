@@ -13,7 +13,7 @@ const data = {
 ], 
         ["React.js", "Vite", "Tailwind CSS", "Python", "FastAPI", "Google Gemini API", "Groq", "BeautifulSoup4", "PyPDF", "Antigravity"]
     ],
-    liveLink: ["https://sentiment-frontend-two.vercel.app/", "l2"   ],
+    liveLink: ["https://sentiment-frontend-two.vercel.app/", "https://policy-pilot-frontend-hosted.vercel.app/"   ],
     githubLink: ["https://github.com/Himanshu-2728/sentiment-analysis-model/tree/main", "https://github.com/Himanshu-2728/PolicyPilot"],
 }
 
